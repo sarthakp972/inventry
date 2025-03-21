@@ -1,0 +1,112 @@
+/* import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+  .table-responsive-custom {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .table-responsive-custom table {
+    min-width: 1200px; /* Ensures the table does not shrink */
+  }
+  /* General container styling */
+.category-page {
+  padding: 20px; /* Add padding to the container */
+}
+
+/* Headings */
+h2 {
+  font-size: 24px; /* Bigger font size for heading */
+  color: #333; /* Dark color for the heading */
+}
+
+/* Button styling */
+.btn-success {
+  background-color: #28a745; /* Green background */
+  border-color: #28a745; /* Same color for border */
+}
+
+.btn-warning, .btn-danger {
+  margin-right: 10px; /* Add spacing between buttons */
+}
+
+.btn-success:hover, .btn-warning:hover, .btn-danger:hover {
+  filter: brightness(90%); /* Slightly darken the button on hover */
+}
+
+/* Form Toggle Fields styling */
+h5 {
+  margin-top: 20px; /* Add margin for better spacing */
+  color: #333; /* Dark color for text */
+}
+
+.form-check {
+  display: inline-block; /* Inline display for checkboxes */
+  margin-right: 15px; /* Spacing between checkboxes */
+}
+
+/* Table Styles */
+.table-responsive {
+  margin-top: 20px; /* Space above the table */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow in case of wide table */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.table {
+  width: 100%; /* Full width of containing element */
+  border-collapse: collapse; /* Merge borders */
+}
+
+/* Table headings and cells */
+.table th, .table td {
+  text-align: center; /* Center align text */
+  padding: 15px; /* Padding for table cells */
+  border-bottom: 1px solid #ddd; /* Light border between rows */
+  color: #555; /* Darker text color */
+}
+
+.table thead {
+  background-color: #f8f9fa; /* Light background for header */
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Reduce font-size for smaller devices */
+  h2 {
+      font-size: 20px; 
+  }
+
+  .table th, .table td {
+      padding: 10px; /* Reduce padding in table cells */
+      font-size: 0.9rem; /* Smaller font size for smaller devices */
+  }
+
+  /* Stack buttons vertically on small screens */
+  .btn {
+      margin-bottom: 10px; /* Space between buttons */
+      width: 100%; /* Full width on small screens */
+  }
+
+  .d-flex {
+      flex-direction: column; /* Column direction for flex container */
+  }
+}
+
+.sticky-header {
+  background-color: #fff; /* Background color to match your site's theme */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: sticky; /* Enable sticky positioning */
+  top: 60px; /* Adjust according to your navbar's height */
+  z-index: 1000; /* Ensure it stays above other content */
+  /* padding: 10px 20px; Add some padding */
+}
+
+.sticky-header h2 {
+  margin: 0; /* Reset margin for h2 to prevent overflow */
+}
